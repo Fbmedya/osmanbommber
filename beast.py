@@ -1,15 +1,15 @@
 """
 ╔═════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                 ║
-║                                   Beast bomber                                  ║
+║                              YK OSMAN BOMMBER PRO                               ║
 ║  Author:                                                                        ║
-║  https://github.com/un1cum                                                      ║
+║  https://github.com/Fbmedya                                                     ║
 ║                                                                                 ║
 ║  The author of this program is not responsible for its use!                     ║
 ║  When posting this code on other resources, please indicate the author!         ║
 ║                                                                                 ║
 ║                               All rights reserved.                              ║
-║                            Copyright (C) 2023 un1cum                            ║
+║                            Copyright (C) 2023 FROXY                             ║
 ║                                                                                 ║
 ╚═════════════════════════════════════════════════════════════════════════════════╝
 """
@@ -41,8 +41,8 @@ class BeastBomber:
         self.telegram_attack = TelegramAttack()
 
     def ex(self):
-        if self.lang == 'ru':
-            option = input(Fore.LIGHTCYAN_EX + '\n\nВыйти? yes/no: ')
+        if self.lang == 'tr':
+            option = input(Fore.LIGHTCYAN_EX + '\n\Ayrılmak mı? evet/hayır: ')
         else:
             option = input(Fore.LIGHTCYAN_EX + '\n\nExit? yes/no: ')
 
@@ -52,19 +52,20 @@ class BeastBomber:
             else:
                 os.system("clear")
 
-            if self.lang == 'ru':
+            if self.lang == 'tr':
                 text = """
-        Спасибо за использование Beast bomber!
-Автор будет благодарен, если Вы поставите звезду на GitHub:
-        https://github.com/un1cum/Beast_Bomber
-              Copyright (C) 2023 un1cum """
+      kullandığınız için teşekkür ederiz!
+GitHub'a bir yıldız koyarsanız sahip minnettar olacaktır:
+       https://github.com/Fbmedya/osmanbommber
+        
+              Copyright (C) 2023 FROXY """
             else:
                 text = """
             Thanks for using Beast bomber!
 The author would appreciate it if you would put a star on 
               this repository on GitHub:
-        https://github.com/un1cum/Beast_Bomber
-              Copyright (C) 2023 un1cum """
+       https://github.com/Fbmedya/osmanbommber
+              Copyright (C) 2023 FROXY """
 
             print(fade.purplepink(text))
             os.abort()
@@ -86,7 +87,7 @@ The author would appreciate it if you would put a star on
 
         logo_main()
 
-        if self.lang == "ru":
+        if self.lang == "tr":
             menu_ru()
         else:
             menu_en()
@@ -107,8 +108,8 @@ The author would appreciate it if you would put a star on
 
                 logo_sms()
 
-                if self.lang == "ru":
-                    print(Fore.GREEN + '\nГотово')
+                if self.lang == "tr":
+                    print(Fore.GREEN + '\nTamamlandı')
                 else:
                     print(Fore.GREEN + '\nDone')
 
@@ -124,8 +125,8 @@ The author would appreciate it if you would put a star on
 
                 logo_email()
 
-                if self.lang == "ru":
-                    print(Fore.GREEN + '\nГотово')
+                if self.lang == "tr":
+                    print(Fore.GREEN + '\nTamamlandı')
                 else:
                     print(Fore.GREEN + '\nDone')
 
@@ -141,8 +142,8 @@ The author would appreciate it if you would put a star on
 
                 logo_telegram()
 
-                if self.lang == "ru":
-                    print(Fore.GREEN + '\nГотово')
+                if self.lang == "tr":
+                    print(Fore.GREEN + '\nTamamlandı')
                 else:
                     print(Fore.GREEN + '\nDone')
 
@@ -159,7 +160,7 @@ The author would appreciate it if you would put a star on
                 logo_discord()
 
                 if self.lang == "ru":
-                    print(Fore.GREEN + '\nГотово')
+                    print(Fore.GREEN + '\nTamamlandı')
                 else:
                     print(Fore.GREEN + '\nDone')
 
@@ -175,8 +176,8 @@ The author would appreciate it if you would put a star on
 
                 logo_ddos()
 
-                if self.lang == "ru":
-                    print(Fore.GREEN + '\nГотово')
+                if self.lang == "tr":
+                    print(Fore.GREEN + '\nTamamlandı')
                 else:
                     print(Fore.GREEN + '\nDone')
 
@@ -189,8 +190,8 @@ The author would appreciate it if you would put a star on
                 self.ex()
 
         except:
-            if self.lang == "ru":
-                print(Fore.RED + '\nВо время работы бомбера произошла ошибка, проверьте корректность введенных данных.')
+            if self.lang == "tr":
+                print(Fore.RED + '\nBombacı çalışırken bir hata oluştu, girilen verilerin doğru olup olmadığını kontrol edin.')
             else:
                 print(Fore.RED + '\nAn error occurred during bomber working, check the correctness of the entered data.')
 
