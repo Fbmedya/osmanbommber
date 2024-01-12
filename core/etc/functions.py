@@ -31,14 +31,14 @@ init()
 
 def logo_main():
     text = """
-╔══╗         ╔╗ ╔══╗      ╔╗       
-║╔╗║        ╔╝╚╗║╔╗║      ║║       
-║╚╝╚╦══╦══╦═╩╗╔╝║╚╝╚╦══╦╗╔╣╚═╦══╦═╗
-║╔═╗║ ═╣╔╗║══╣║ ║╔═╗║╔╗║╚╝║╔╗║ ═╣╔╝
-║╚═╝║ ═╣╔╗╠══║╚╗║╚═╝║╚╝║║║║╚╝║ ═╣║ 
-╚═══╩══╩╝╚╩══╩═╝╚═══╩══╩╩╩╩══╩══╩╝ 
-            By un1cum
- https://t.me/beast_project_team
+                                                                                
+,--.   ,--.,--. ,--.    ,-----.   ,-----. ,--.   ,--.,-----.  ,------.,------.  
+ \  `.'  / |  .'   /    |  |) /_ '  .-.  '|   `.'   ||  |) /_ |  .---'|  .--. ' 
+  '.    /  |  .   '     |  .-.  \|  | |  ||  |'.'|  ||  .-.  \|  `--, |  '--'.' 
+    |  |   |  |\   \    |  '--' /'  '-'  '|  |   |  ||  '--' /|  `---.|  |\  \  
+    `--'   `--' '--'    `------'  `-----' `--'   `--'`------' `------'`--' '--' 
+            By FROXY
+ 
     """
     print(fade.water(text))
 
@@ -151,23 +151,23 @@ def menu_en():
     print(fade.purplepink(text))
 
 
-def menu_ru():
-    text = """[0] Выход        
-[1] СМС спам     
-[2] Email спам   
-[3] Telegram спам
-[4] Discord спам 
-[5] DDoS атака
-[6] Настройки    
+def menu_tr():
+    text = """[0] Çıkış
+[1] SMS spam'ı
+[2] E-posta spam'i
+[3] Telgraf spam'ı
+[4] Discord spam'ı
+[5] DDoS saldırısı
+[6] Ayarlar
     """
     print(fade.purplepink(text))
 
 
-def settings_menu_ru():
-    text = """[0] Назад        
-[1] Обновить прокси    
-[2] Сменить язык
-[3] Очистить кэш
+def settings_menu_tr():
+    text = """[0] Geri
+[1] Proxy'yi güncelle
+[2] Dili değiştir
+[3] Önbelleği temizle
         """
     print(fade.purplepink(text))
 
@@ -277,8 +277,8 @@ def get_proxies():
             for line in file:
                 proxies.append(line.replace('\n', ''))
     except:
-        if lang == 'ru':
-            print(Fore.RED + '\nОшибка при попытке открыть файл input/proxies.txt')
+        if lang == 'tr':
+            print(Fore.RED + '\ninput/proxies.tx dosyasını açmaya çalışırken hata oluştu')
         else:
             print(Fore.RED + '\nError when trying to open a file input/proxies.txt')
 
@@ -307,8 +307,8 @@ def get_discord_tokens():
             for line in file:
                 tokens.append(line.replace('\n', ''))
     except:
-        if lang == 'ru':
-            print(Fore.RED + '\nОшибка при попытке открыть файл input/discord_tokens.txt')
+        if lang == 'tr':
+            print(Fore.RED + '\ninput/discord_tokens.txt dosyasını açmaya çalışırken hata oluştu')
         else:
             print(Fore.RED + '\nError when trying to open a file input/discord_tokens.txt')
 
@@ -322,8 +322,8 @@ def get_telegram_accounts():
     try:
         accounts = os.listdir(os.path.abspath('input/telegram_accounts'))
     except:
-        if lang == 'ru':
-            print(Fore.RED + '\nОшибка при попытке получить Telegram аккаунты из input/telegram_accounts')
+        if lang == 'tr':
+            print(Fore.RED + '\nTelegram hesaplarını input/telegram_accounts'tan almaya çalışırken hata oluştu')
         else:
             print(Fore.RED + '\nError when trying to retrieve Telegram accounts from input/telegram_accounts')
 
@@ -339,8 +339,8 @@ def get_email_accounts():
             for line in file:
                 emails.append(line.replace('\n', ''))
     except:
-        if lang == 'ru':
-            print(Fore.RED + '\nОшибка при попытке открыть файл input/email_accounts.txt')
+        if lang == 'tr':
+            print(Fore.RED + '\ninput/email_accounts.txt dosyasını açmaya çalışırken hata oluştu')
         else:
             print(Fore.RED + '\nError when trying to open a file input/email_accounts.txt')
 
@@ -359,6 +359,6 @@ def change_language():
             json.dump(js, ensure_ascii=False, indent=4, fp=file)
 
     else:
-        js["language"] = "ru"
+        js["language"] = "tr"
         with open(os.path.abspath('core/config.json'), 'w') as file:
             json.dump(js, ensure_ascii=False, indent=4, fp=file)
