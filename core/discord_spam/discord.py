@@ -1,15 +1,15 @@
 """
 ╔═════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                 ║
-║                                   Beast bomber                                  ║
+║                                   OSMAN BOMBER                                  ║
 ║  Author:                                                                        ║
-║  https://github.com/un1cum                                                      ║
+║  https://github.com/Fbmedya                                                     ║
 ║                                                                                 ║
 ║  The author of this program is not responsible for its use!                     ║
 ║  When posting this code on other resources, please indicate the author!         ║
 ║                                                                                 ║
 ║                               All rights reserved.                              ║
-║                            Copyright (C) 2023 un1cum                            ║
+║                            Copyright (C) 2023 FROXY                             ║
 ║                                                                                 ║
 ╚═════════════════════════════════════════════════════════════════════════════════╝
 """
@@ -55,9 +55,9 @@ class DiscordSpam:
 
         if self.started == self.todo:
             with self.lock:
-                if self.lang == 'ru':
+                if self.lang == 'tr':
                     print(Fore.WHITE + '[' + Fore.YELLOW + Style.BRIGHT + 'СТАТУС' + Fore.WHITE + '] ' +
-                          Fore.GREEN + 'ОТПРАВЛЕНО: ' + Fore.MAGENTA + self.r + Fore.RED + ' ОШИБКИ: ' + self.r2)
+                          Fore.GREEN + 'Gönder ' + Fore.MAGENTA + self.r + Fore.RED + ' Hatalılar: ' + self.r2)
                 else:
                     print(Fore.WHITE + '[' + Fore.YELLOW + Style.BRIGHT + 'STATUS' + Fore.WHITE + '] ' +
                           Fore.GREEN + 'SENT: ' + Fore.MAGENTA + self.r + Fore.RED + ' FAILS: ' + self.r2)
@@ -146,18 +146,18 @@ class DiscordSpam:
 
         logo_discord()
 
-        if self.lang == 'ru':
-            text = "\nID пользователя(ей) discord для атаки > "
+        if self.lang == 'tr':
+            text = "\nID saldırmak için discord kullanıcı(lar)ı> "
             text2 = """
-╔═════════════════════════════════════════╗
-║Если вы собираетесь указать несоклько ID,║
-║  то делайте это в следующем вормате:    ║
-║             ID, ID, ID                  ║
-║                                         ║
-║    Формат ID: 9999999999999999999       ║
-╚═════════════════════════════════════════╝
+╔══════════════════════════════════════════════╗
+║     Birden fazla kimlik belirtecekseniz,     ║
+║ daha sonra bunu aşağıdaki formatta yapın:    ║
+║             ID, ID, ID                       ║
+║                                              ║ 
+║  Kimlik formatı: 9999999999999999999         ║
+╚══════════════════════════════════════════════╝
                     """
-            text3 = "Сообщение для отправки > "
+            text3 = "Gönderilecek mesaj > "
         else:
             text = "\nDiscord user(s) ID for the attack > "
             text2 = """
@@ -178,13 +178,13 @@ class DiscordSpam:
         ids = ids.split(',')
         mes = input(Fore.YELLOW + Style.BRIGHT + text3 + Fore.GREEN)
 
-        if self.lang == 'ru':
-            text = 'Использовать прокси? (y/n) > '
-            text2 = 'Потоки > '
-            text3 = 'Время атаки (в сек.) > '
-            text4 = '\n!НЕ РЕКОМЕНДУЕТСЯ!'
-            text5 = '\nЗапустить потоки для каждой прокси? (y/n) > '
-            text6 = 'поток запущен'
+        if self.lang == 'tr':
+             text = 'Proxy kullanılsın mı? (e/h) > '
+             text2 = 'Konular > '
+             text3 = 'Saldırı süresi (saniye cinsinden) > '
+             text4 = '\n!ÖNERİLMEZ!'
+             text5 = '\nHer proxy için konu başlatılsın mı? (e/h) > '
+             text6 = 'konu başlatıldı'
         else:
             text = 'Use proxies? (y/n) > '
             text2 = 'Threads > '
