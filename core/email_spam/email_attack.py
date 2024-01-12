@@ -1,15 +1,15 @@
 """
 ╔═════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                 ║
-║                                   Beast bomber                                  ║
+║                                   OSMAN BOMBER                                  ║
 ║  Author:                                                                        ║
-║  https://github.com/un1cum                                                      ║
+║  https://github.com/Fbmedya                                                     ║
 ║                                                                                 ║
 ║  The author of this program is not responsible for its use!                     ║
 ║  When posting this code on other resources, please indicate the author!         ║
 ║                                                                                 ║
 ║                               All rights reserved.                              ║
-║                            Copyright (C) 2023 un1cum                            ║
+║                            Copyright (C) 2023 FROXY                             ║
 ║                                                                                 ║
 ╚═════════════════════════════════════════════════════════════════════════════════╝
 """
@@ -48,9 +48,9 @@ class EmailAttack:
 
         if self.started == self.todo:
             with self.lock:
-                if self.lang == 'ru':
+                if self.lang == 'tr':
                     print(Fore.WHITE + '[' + Fore.YELLOW + Style.BRIGHT + 'СТАТУС' + Fore.WHITE + '] ' +
-                          Fore.GREEN + 'ОТПРАВЛЕНО: ' + Fore.MAGENTA + self.r + Fore.RED + ' ОШИБКИ: ' + self.r2)
+                          Fore.GREEN + 'Gönderilen: ' + Fore.MAGENTA + self.r + Fore.RED + ' Hatalılar: ' + self.r2)
                 else:
                     print(Fore.WHITE + '[' + Fore.YELLOW + Style.BRIGHT + 'STATUS' + Fore.WHITE + '] ' +
                           Fore.GREEN + 'SENT: ' + Fore.MAGENTA + self.r + Fore.RED + ' FAILS: ' + self.r2)
@@ -109,18 +109,18 @@ class EmailAttack:
 
         logo_email()
 
-        if self.lang == 'ru':
-            text = "\nEmail(ы) для атаки > "
+        if self.lang == 'tr':
+            text = "\nSaldırı için e-posta(lar) > "
             text2 = """
 ╔════════════════════════════════════════════╗
-║Если вы собираетесь указать несоклько email,║
-║    то делайте это в следующем вормате:     ║
+║Birden fazla e-posta adresi girecekseniz,   ║
+║       aşağıdaki formatı kullanınız;        ║
 ║           email, email, email              ║
 ║                                            ║
-║       Формат email: email@email.com        ║
+║      örnek format : email@email.com        ║
 ╚════════════════════════════════════════════╝
                     """
-            text3 = "Сообщение для отправки > "
+            text3 = "Gönderilecek mesaj > "
             text4 = "Тема сообщения > "
         else:
             text = "\nEmail(s) for the attack > "
@@ -144,11 +144,11 @@ class EmailAttack:
         mes = input(Fore.YELLOW + Style.BRIGHT + text3 + Fore.GREEN)
         subject = input(Fore.YELLOW + Style.BRIGHT + text4 + Fore.GREEN)
 
-        if self.lang == 'ru':
-            text = 'Потоки > '
-            text2 = 'Время атаки (в сек.) > '
-            text3 = 'поток запущен'
-        else:
+        if self.lang == 'tr':
+             text = 'Konular > '
+             text2 = 'Saldırı süresi (saniye cinsinden) > '
+             text3 = 'konu başlatıldı'
+else:
             text = 'Threads > '
             text2 = 'Time attack (in sec.) > '
             text3 = 'thread started'
