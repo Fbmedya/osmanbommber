@@ -1,6 +1,6 @@
 # ☾☆ TR
 ---
-# Osman Bomber
+# YK Bomber
 ---
 Merhaba dostlarım...
 Beast bomber altyapısı ile mükemmel türçke panelli sms bomber toolumuzu siz değerli kullanıcılırımıza sunuyoruz
@@ -69,7 +69,7 @@ python osmanbommber
 ## Bunlar güncel içinde olan alt menülerdir daha fazlası yakında eklenecektir...
 
 # 🇬🇧 ENG
-# Osman Bomber
+# YK Bomber
 ---
 Hello my friends...
 We offer our excellent Turkish panel SMS bomber tool with Beast bomber infrastructure to our valued users.
