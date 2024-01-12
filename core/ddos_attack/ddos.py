@@ -1,15 +1,15 @@
 """
 ╔═════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                 ║
-║                                   Beast bomber                                  ║
+║                                  Osman Bombber                                  ║
 ║  Author:                                                                        ║
-║  https://github.com/un1cum                                                      ║
+║ https://github.com/Fbmedya                                                      ║
 ║                                                                                 ║
 ║  The author of this program is not responsible for its use!                     ║
 ║  When posting this code on other resources, please indicate the author!         ║
 ║                                                                                 ║
 ║                               All rights reserved.                              ║
-║                            Copyright (C) 2023 un1cum                            ║
+║                            Copyright (C) 2023 FROXY                             ║
 ║                                                                                 ║
 ╚═════════════════════════════════════════════════════════════════════════════════╝
 """
@@ -56,9 +56,9 @@ class DDoSAttack:
 
         if self.started == self.todo:
             with self.lock:
-                if self.lang == 'ru':
+                if self.lang == 'tr':
                     print(Fore.WHITE + '[' + Fore.YELLOW + Style.BRIGHT + 'СТАТУС' + Fore.WHITE + '] ' +
-                          Fore.GREEN + 'ОТПРАВЛЕНО: ' + Fore.MAGENTA + self.r + Fore.RED + ' ОШИБКИ: ' + self.r2)
+                          Fore.GREEN + 'Gönder ' + Fore.MAGENTA + self.r + Fore.RED + ' Hatalar ' + self.r2)
                 else:
                     print(Fore.WHITE + '[' + Fore.YELLOW + Style.BRIGHT + 'STATUS' + Fore.WHITE + '] ' +
                           Fore.GREEN + 'SENT: ' + Fore.MAGENTA + self.r + Fore.RED + ' FAILS: ' + self.r2)
@@ -242,8 +242,8 @@ class DDoSAttack:
 
         logo_ddos()
 
-        if self.lang == 'ru':
-            text = "\nUrl или IP для атаки > "
+        if self.lang == 'tr':
+            text = "\n URL veya IP saldırısı için > "
         else:
             text = "\nUrl or IP for attack > "
 
@@ -286,8 +286,8 @@ class DDoSAttack:
                 url4 = url4.split('/')[0]
                 url = socket.gethostbyname(url4)
             except:
-                if self.lang == 'ru':
-                    text = 'Во время обработки url произошла ошибка, проверьте правильность введенных данных.'
+                if self.lang == 'tr':
+                    text = 'URL işlenirken bir hata oluştu. Lütfen girilen verilerin doğru olup olmadığını kontrol edin.'
                 else:
                     text = 'An error occurred while processing the url, check that the data entered is correct.'
                 print(Back.RED + Fore.WHITE + text + Fore.RESET + Style.RESET_ALL)
@@ -295,14 +295,13 @@ class DDoSAttack:
                 ok = False
 
         if ok is True:
-            if self.lang == 'ru':
-                text = 'IP цели: '
-                text2 = 'Использовать прокси? (y/n) > '
-                text3 = 'Потоки > '
-                text4 = 'Время атаки (в сек.) > '
-                text5 = '\n!НЕ РЕКОМЕНДУЕТСЯ!'
-                text6 = '\nЗапустить потоки для каждой прокси? (y/n) > '
-                text7 = 'поток запущен'
+            if self.lang == 'tr':
+                 text2 = 'Proxy kullanılsın mı? (e/h) > '
+                 text3 = 'Konular > '
+                 text4 = 'Saldırı süresi (saniye cinsinden) > '
+                 text5 = '\n!ÖNERİLMEZ!'
+                 text6 = '\nHer proxy için konu başlatılsın mı? (e/h) > '
+                 text7 = 'konu başlatıldı'
             else:
                 text = 'Target IP: '
                 text2 = 'Use proxies? (y/n) > '
