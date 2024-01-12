@@ -1,15 +1,15 @@
 """
 ╔═════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                 ║
-║                                   Beast Bomber                                  ║
+║                                   YK BOMBER                                     ║
 ║  Author:                                                                        ║
-║  https://github.com/un1cum                                                      ║
+║  https://github.com/Fbmedya                                                     ║
 ║                                                                                 ║
 ║  The author of this program is not responsible for its use!                     ║
 ║  When posting this code on other resources, please indicate the author!         ║
 ║                                                                                 ║
 ║                               All rights reserved.                              ║
-║                            Copyright (C) 2023 un1cum                            ║
+║                            Copyright (C) 2023 FROXY                             ║
 ║                                                                                 ║
 ╚═════════════════════════════════════════════════════════════════════════════════╝
 """
@@ -36,8 +36,8 @@ class Settings:
 
         logo_settings()
 
-        if self.lang == 'ru':
-            settings_menu_ru()
+        if self.lang == 'tr':
+            settings_menu_tr()
         else:
             settings_menu_en()
 
@@ -51,8 +51,8 @@ class Settings:
         elif option == '1':
             update_proxies()
 
-            if self.lang == 'ru':
-                text = '\nГотово'
+            if self.lang == 'tr':
+                text = '\nTamamlandı'
             else:
                 text = '\nDone'
 
@@ -95,8 +95,8 @@ class Settings:
             except:
                 pass
 
-            if self.lang == 'ru':
-                text = '\nГотово'
+            if self.lang == 'tr':
+                text = '\nTamamlandı'
             else:
                 text = '\nDone'
 
