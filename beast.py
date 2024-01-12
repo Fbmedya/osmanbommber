@@ -1,7 +1,7 @@
 """
 ╔═════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                 ║
-║                              YK OSMAN BOMMBER PRO                               ║
+║                              YK  BOMMBER PRO                                    ║
 ║  Author:                                                                        ║
 ║  https://github.com/Fbmedya                                                     ║
 ║                                                                                 ║
