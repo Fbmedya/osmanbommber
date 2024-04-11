@@ -57,7 +57,7 @@ python osmanbommber
 - Beast Bomber
 - Lyrox
 - El pasai
-- Slovxy
+- Slovxy [Şerefsizlik yaptı atıldı]
 - IBS DATA
 
 # içinde_neler_var?
